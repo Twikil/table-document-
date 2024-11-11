@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+  
+      th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+      }
+        .styled-table
+      tr:nth-child(odd) {
+        background-color: aqua;
+      }
+      </style>
+
+<p style="text-align: center;">The main table</p>
+
+<table>
+    <tbody>
+        <theader>
+            <tr>
+                <th>Name</th>
+                <th >Age</th>
+                <th>Gender</th>
+            </tr>
+        </theader>
+        
+ 
+         
+    
+    
+  
+  
+    
+    
+    
+
+    
+    
+    <tr>
+        <td>akhil</td>
+        <td>23</td>
+        <td>Male</td>
+        
+    </tr>
+    <tr>
+        <td>lella</td>
+        <td>22</td>
+        <td>female</td>
+    </tr>
+    
+
+
+   </tbody>
+</table>
+<p style="text-align: center;">How to add additional columns? How to add additional rows? How to span columns?</p>
+<table>
+    <tbody>
+        <theader>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+                <th>gender</th>
+            </tr>
+        </theader>
+        <tr>
+            <td>ajay</td>
+            <td>kota</td>
+            <td> 24</td>
+            <td> male</td>
+        </tr>
+        <tr>
+            <td>surya</td>
+            <td>chandra</td>
+            <td>26</td>
+            <td>male</td>
+        </tr>
+        <tr>
+            <td>eswar</td>
+            <td>prasad</td>
+            <td>25</td>
+            <td>male</td>
+
+        </tr>
+
+        <tr>
+            <td>likitha</td>
+            <td>amiti</td>
+            <td>24</td>
+            <td>female</td>
+        </tr>
+        <theader>
+            <tr>
+            <th rowspan="2">average gender</th>
+            </tr>
+        </theader>
+        
+        <tr>
+            <td colspan="3">male</td>
+        </tr>
+    </tbody>
+</table>
+<p style="text-align: center;">Apply styles to have different width for each column Name - 60% Age - 10% Gender- 20%</p>
+<table>
+    <tbody>
+        <theader>
+            <tr>
+                <th style="width: 60%;">Name</th>
+                <th style="width: 10%;">Age</th>
+                <th style="width: 20%;">gender</th>
+            </tr>
+        </theader>
+        <tr>
+            <td>ajay</td>
+            <td>24</td>
+            <td>male</td>
+        </tr>
+        <tr>
+            <td>chandu</td>
+            <td>25</td>
+            <td>male</td>
+        </tr>
+
+        <tr>
+            <td>eswar</td>
+            <td>23</td>
+            <td>male</td>
+        </tr>
+    </tbody>
+</table>
+<p style="text-align: center;">How to merge two rows into a single data cell?</p>
+<table>
+    <tbody>
+        <theader>
+            <tr>
+                <th>Name</th>
+                <th>product</th>
+                <th>cost</th>
+    
+            </tr>
+        </theader>
+        <tr>
+            <td rowspan="2">apple</td>
+            <td>iphone</td>
+            <td>$80</td>
+        </tr>
+        <tr>
+            <td>ipad</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td rowspan="2">samsung</td>
+            <td>phone</td>
+            <td>$80</td>
+        </tr>
+        <tr>
+            <td>tab</td>
+            <td>$100</td>
+        </tr>
+
+       
+    </tbody>
+</table>
+<p style="text-align: center;">What is the purpose of align property in table cells?</p>
+<p style="text-align: center;color: darkgreen;">align is a deprecated HTML attribute that was used to align the text within a table cell. However, it is no longer recommended for modern web development due to its lack of flexibility and compatibility issues with CSS.</p>
+<p style="text-align: center;">cellpadding - is this valid property?</p>
+<p style="text-align: center;">cellpadding is not valid property</p>
+<p style="text-align: center;">How to expand a cell to two rows and 3 columns?</p>
+<table>
+    <tbody>
+        <theader>
+            <tr>
+                <th>Name</th>
+                <th>Subjects</th>
+                <th colspan="3">Results</th>
+                <th>Avg Score</th>
+            </tr>
+        </theader>
+        <tr>
+            <td rowspan="2">chandu</td>
+            <td>maths</td>
+            <td>80</td>
+            <td>70</td>
+            <td>90</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td>english</td>
+            <td>80</td>
+            <td>70</td>
+            <td>90</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td rowspan="2">eswar</td>
+            <td>maths</td>
+            <td>80</td>
+            <td>70</td>
+            <td>90</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td>english</td>
+            <td>80</td>
+            <td>70</td>
+            <td>90</td>
+            <td>70</td>
+            
+            
+        </tr>
+
+    </tbody>
+</table>
+ <p style="text-align: center;">What happens if you use the border attribute on a table element in modern HTML?</p>
+ <table style="border-collapse: separate;">
+
+    <tbody>
+        <theader>
+            <tr>
+                <th>Name</th>
+                <th >Age</th>
+                <th>Gender</th>
+
+            </tr>
+
+            <tr>
+                <td>akhil</td>
+                <td>23</td>
+                <td>Male</td>
+
+            </tr>
+            <tr>
+                <td>lella</td>
+                <td>22</td>
+                <td>female</td>
+
+            </tr>
+        </theader>
+
+    </tbody>
+ </table>
+ <p style="text-align: center;">Styled Table</p>
+
+ <table class="styled-table">
+    
+    <tbody>
+        
+        <theader>
+            <tr>
+                <th rowspan="2" >Product</th>
+                <th colspan="3">Features</th>
+                <th colspan="2" >Pricing</th>
+           
+            </tr>
+        </theader>
+        
+ 
+         
+    
+    
+  
+  
+    <tr>
+        
+        <th>screen size</th>
+        <th>battery life</th>
+        <th>weight</th>
+        <th>base price</th>
+        <th>discounted price</th>
+      
+    </tr>
+    
+    <tr>
+        <td>product A</td>
+        <td>6 inches</td>
+        <td>24 hours</td>
+        <td>150g</td>
+        <td>$500</td>
+        <td>$450</td>
+      
+    </tr>
+
+    <tr>
+        <td>product B</td>
+        <td>5.5 inches</td>
+        <td>18 hours</td>
+        <td>140g</td>
+        <td>$450</td>
+        <td>$400</td>
+      
+    </tr>
+    <tr>
+        <td>product C</td>
+        <td>6.2 inches</td>
+        <td>20 hours</td>
+        <td>160g</td>
+        <td>$550</td>
+        <td>$500</td>
+      
+    </tr>
+    <tr>
+        <td>product D</td>
+        <td>7 inches</td>
+        <td>24 hours</td>
+        <td>170g</td>
+        <td>$600</td>
+        <td>$550</td>
+    </tr>
+   </tbody>
+</table>
+
+</body>
+</html>
+
